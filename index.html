@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <!-- CSS style -->
     <link rel="stylesheet" href="/asstes/css/style.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Header Start -->
@@ -22,15 +24,30 @@
 
             <div class="header__content">
                 <p class="header__text">Balance: <span>$125</span></p>
-                <button class="header__btn">
-                    <img src="/asstes/img/profile.png" alt="">
-                    Alexa Jui
-                    <i class="ri-arrow-down-s-line"></i>
-                </button>
+                <div class="header-menu">
+                    <button class="header__btn">
+                        <img src="/asstes/img/profile.png" alt="">
+                        Alexa Jui
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div class="header-dropdown">
+                        <ul>
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Add Fund</a></li>
+                            <li><a class="dropdown-item" href="#">API Documentation</a></li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+
+                        <button class="dropdown-btn">
+                            <i class="ri-logout-box-line"></i>
+                            Log Out
+                        </button>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- Header End -->
-        
+
         <!-- Sidebar Start -->
         <aside id="sidebar" class="sidebar">
             <div class="sidebar__title">
@@ -65,7 +82,7 @@
             </ul>
         </aside>
         <!-- Sidebar End -->
-        
+
         <!-- Main -->
         <main class="main-container">
             <div class="main__cards">
@@ -86,7 +103,7 @@
                                 <p class="card-no">xxxxxxxxxxxx4684</p>
                             </div>
                         </div>
-                        
+
                         <div class="credit-card">
                             <i class="ri-delete-bin-line"></i>
                             <div class="credit__card-info">
@@ -94,7 +111,7 @@
                                 <p class="card-no">xxxxxxxxxxxx4242</p>
                             </div>
                         </div>
-                        
+
                         <div class="credit-card">
                             <i class="ri-delete-bin-line"></i>
                             <div class="credit__card-info">
@@ -109,59 +126,60 @@
             <!-- main setting -->
             <div class="main__setting">
                 <div class="setting__list">
-                        <li><a href="#">Update Profile</a></li>
-                        <li><a href="#">Change Password</a></li>
-                        <li><a href="#">Email Notifications</a></li>
-                        <li><a href="#">Auto Recharge Settings</a></li>
+                    <li><a href="#">Update Profile</a></li>
+                    <li><a href="#">Change Password</a></li>
+                    <li><a href="#">Email Notifications</a></li>
+                    <li><a href="#">Auto Recharge Settings</a></li>
                 </div>
 
                 <div class="main__toogle">
-                        <div class="toggle__section">
-                            <div class="toggle__wrapper">
-                                <label class="toggle">
-                                    <input class="toggle-checkbox" type="checkbox">
-                                    <div class="toggle-switch"></div>
-                                    <span class="toggle-label">Notify me when list verification completes</span>
-                                </label>
-                        
-                                <label class="toggle">
-                                    <input class="toggle-checkbox" type="checkbox">
-                                    <div class="toggle-switch"></div>
-                                    <span class="toggle-label">Notify me when list export completes</span>
-                                </label>
-                        
-                                <label class="toggle">
-                                    <input class="toggle-checkbox" type="checkbox">
-                                    <div class="toggle-switch"></div>
-                                    <span class="toggle-label">Notify me when list verification result is about to expire</span>
-                                </label>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="toggle__email">
+                    <div class="toggle__section">
+                        <div class="toggle__wrapper">
                             <label class="toggle">
                                 <input class="toggle-checkbox" type="checkbox">
                                 <div class="toggle-switch"></div>
-                                <span class="toggle-label">Receive Low Credits Email</span>
+                                <span class="toggle-label">Notify me when list verification completes</span>
                             </label>
-                        
-                            <div class="email__box">
-                                <div class="email__box-wrapper">
-                                    <label>Send Email to<span>*</span></label>
-                                    <input type="email" placeholder="alexajui@gmail.com">
-                                </div>
-                        
-                                <div class="email__box-wrapper">
-                                    <label>When credits are less than<span>*</span></label>
-                                    <input type="text" placeholder="0">
-                                </div>
+
+                            <label class="toggle">
+                                <input class="toggle-checkbox" type="checkbox">
+                                <div class="toggle-switch"></div>
+                                <span class="toggle-label">Notify me when list export completes</span>
+                            </label>
+
+                            <label class="toggle">
+                                <input class="toggle-checkbox" type="checkbox">
+                                <div class="toggle-switch"></div>
+                                <span class="toggle-label">Notify me when list verification result is about to
+                                    expire</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="toggle__email">
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-label">Receive Low Credits Email</span>
+                        </label>
+
+                        <div class="email__box">
+                            <div class="email__box-wrapper">
+                                <label>Send Email to<span>*</span></label>
+                                <input type="email" placeholder="alexajui@gmail.com">
+                            </div>
+
+                            <div class="email__box-wrapper">
+                                <label>When credits are less than<span>*</span></label>
+                                <input type="text" placeholder="0">
                             </div>
                         </div>
-                        
-                        <button class="save-btn">
-                            Save Changes
-                        </button>
+                    </div>
+
+                    <button class="save-btn">
+                        Save Changes
+                    </button>
                 </div>
             </div>
         </main>
@@ -171,4 +189,5 @@
     <!-- JS -->
     <script src="/asstes/js/script.js"></script>
 </body>
+
 </html>
