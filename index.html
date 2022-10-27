@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="/asstes/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Start -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <i class="ri-menu-line"></i>
+            </div>
+
+            <div class="header__content">
+                <p class="header__text">Balance: <span>$125</span></p>
+                <button class="header__btn">
+                    <img src="/asstes/img/profile.png" alt="">
+                    Alexa Jui
+                    <i class="ri-arrow-down-s-line"></i>
+                </button>
+            </div>
+        </header>
+        <!-- Header End -->
+        
+        <!-- Sidebar Start -->
+        <aside class="sidebar">
+            <div class="sidebar__title">
+                <div class="sidebar__logo">
+                    <img src="/asstes/img/logo.png" alt="">
+                </div>
+                <i class="ri-close-line"></i>
+            </div>
+
+            <ul class="sidebar__list">
+                <li class="sidebar__list-item">
+                    <img src="/asstes/img/icons/dashboard.png" alt=""> Dashboard
+                </li>
+                <li class="sidebar__list-item">
+                    <img src="/asstes/img/icons/search.png" alt=""> Lookup
+                </li>
+                <li class="sidebar__list-item">
+                    <img src="/asstes/img/icons/stacked-file.png" alt=""> Files
+                </li>
+                <li class="sidebar__list-item">
+                    <img src="/asstes/img/icons/log.png" alt=""> Logs
+                </li>
+                <li class="sidebar__list-item">
+                    <img src="/asstes/img/icons/buy.png" alt=""> Buy Credits
+                </li>
+                <li class="sidebar__list-item">
+                    <img src="/asstes/img/icons/distribute.png" alt=""> Integrations
+                </li>
+                <li class="sidebar__list-item">
+                    <img src="/asstes/img/icons/user.png" alt=""> My Profile
+                </li>
+            </ul>
+        </aside>
+        <!-- Sidebar End -->
+        
+        <!-- Main -->
+        <main class="main-container">
+            <div class="main__cards">
+                <div class="main__profile">
+                    <img src="/asstes/img/profile.png" alt="">
+                    <h3>Alexa Jui</h3>
+                    <p>alexajui@gmail.com</p>
+                    <p>+1 354 785 4125</p>
+                    <p>3213 D Street, Columbus, USA</p>
+                </div>
+                <div class="main__credit">
+                    <h2 class="main__credit-title">Your Credit Cards</h2>
+                    <div class="credit__cards">
+                        <div class="credit-card">
+                            <i class="ri-delete-bin-line"></i>
+                            <div class="credit__card-info">
+                                <p class="card-title">Credit Card 1</p>
+                                <p class="card-no">xxxxxxxxxxxx4684</p>
+                            </div>
+                        </div>
+                        
+                        <div class="credit-card">
+                            <i class="ri-delete-bin-line"></i>
+                            <div class="credit__card-info">
+                                <p class="card-title">Credit Card 2</p>
+                                <p class="card-no">xxxxxxxxxxxx4242</p>
+                            </div>
+                        </div>
+                        
+                        <div class="credit-card">
+                            <i class="ri-delete-bin-line"></i>
+                            <div class="credit__card-info">
+                                <p class="card-title">Credit Card 3</p>
+                                <p class="card-no">xxxxxxxxxxxx1254</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main setting -->
+            <div class="main__setting">
+                <div class="setting__list">
+                        <li><a href="#">Update Profile</a></li>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">Email Notifications</a></li>
+                        <li><a href="#">Auto Recharge Settings</a></li>
+                </div>
+
+                <div class="toggle__container">
+                    <div class="toggle__wrapper">
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-label">Notify me when list verification completes</span>
+                        </label>
+                        
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-label">Notify me when list export completes</span>
+                        </label>
+                        
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-label">Notify me when list verification result is about to expire</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- JS -->
+    <script src="/asstes/js/script.js"></script>
+</body>
+</html>
