@@ -1,5 +1,5 @@
-const sidebarOpen = false;
-const sidebar = document.getElementsByClassName("sidebar");
+let sidebarOpen = false;
+let sidebar = document.getElementById("sidebar");
 
 function openSidebar() {
   if (!sidebarOpen) {
