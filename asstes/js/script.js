@@ -1,3 +1,4 @@
+// Sidebar
 let sidebarOpen = false;
 let sidebar = document.getElementById("sidebar");
 
@@ -15,4 +16,12 @@ function closeSidebar() {
   }
 }
 
-console.log(sidebar);
+// header dropdown
+function newClick() {
+  var box1 = document.getElementById("headerDropdown");
+  if (box1.style.display == "block") {
+    box1.style.display = "none";
+  } else {
+    box1.style.display = "block";
+  }
+}
