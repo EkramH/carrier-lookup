@@ -311,13 +311,30 @@ body {
 }
 
 /* setting */
-.toggle__container {
+.main__toogle {
+    margin-left: 20%;
+}
+
+.toggle__section {
+    position: relative;
+}
+
+.toggle__wrapper {
     margin-top: 53px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    left: 388px;
-    margin-left: 318px;
+}
+
+.toggle__section::after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    border-bottom: 2px solid #F2F2F4;
+    bottom: -30px;
+    left: calc(50% - 50%);
 }
 
 .toggle {
@@ -366,4 +383,82 @@ body {
 .toggle-checkbox {
     position: absolute;
     visibility: hidden;
+}
+
+.toggle-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #26262E;
+    margin-left: 20px;
+}
+
+.toggle__email {
+    position: relative;
+    margin-top: 60px;
+}
+
+.email__box {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 30px;
+    margin-left: 75px;
+}
+
+.toggle__email::after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    border-bottom: 2px solid #F2F2F4;
+    bottom: -30px;
+    left: calc(50% - 50%);
+}
+
+.email__box-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.email__box-wrapper label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #7D7D7E;
+}
+
+.email__box-wrapper label > span {
+    color: #FF7901;
+}
+
+.email__box-wrapper input{
+    width: 400px;
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #26262E;
+    padding: 14px 20px;
+}
+
+.save-btn {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
+    background: #FF7901;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+.save-btn:hover {
+    box-shadow: 0px 20px 50px rgba(255, 121, 1, 0.3);
 }
